@@ -1,9 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
 ---
 
 <Layout title="Home | ACME" lang="pt-br">
-	<main>
-	 	
+  <Header/>
+	<main class="mt-16 xl:mt-24 md:px-12 xl:px-28 flex gap-16 flex-col xl:flex-row-reverse xl:items-center">
+		<img src="healthy_food.svg" alt="" width="450" height="450" class="mx-auto">
+		<div class="flex flex-col gap-8 items-center xl:items-start text-center xl:text-left">
+			<h1 class="text-4xl xl:text-5xl font-bold">Anything You May Need, Delivered to you
+				<span class="text-cyan-600 dark:text-cyan-400">Today</span>
+			</h1>
+			<p class="md:text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum magnam fugiat iure. Architecto tempore sapiente dignissimos aspernatur velit possimus laborum dolores, ducimus atque provident quam similique, laudantium, dicta assumenda ipsam?</p>
+		</div>
 	</main>
 </Layout>
